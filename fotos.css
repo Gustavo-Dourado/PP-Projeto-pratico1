@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+li {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: whitesmoke;
+    font-size: 19px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+li:hover {
+    color: #228038;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+h2 {
+    margin-top: 100px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: whitesmoke;
+    font-size: 10px;
+}
+
+#descricao {
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: whitesmoke;
+    font-size: 19px;
+}
+
+.display-fotos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 50px;
+    column-gap: 20px;
+    padding: 20px;
+    margin: 50px auto 0px;
+}
+
+.card {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: whitesmoke;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.foto-1 {
+    background-image: url('https://i.pinimg.com/236x/18/8f/1b/188f1b6d6df033d73d4249c89c5565be.jpg');
+}
+.foto-2 {
+    background-image: url('https://i.pinimg.com/236x/7b/52/f0/7b52f05acbbe31625f81f0af8f5b6a8f.jpg');
+}
+.foto-3 {
+    background-image: url('https://avatars.mds.yandex.net/i?id=5f2c5637a7f1162a5c238d02ed5aeb9fdc0b8e16-4486037-images-thumbs&n=13');
+    background-position: 35% 75%;
+}
+.foto-4 {
+    background-image: url('https://avatars.mds.yandex.net/i?id=cf37211d2fec8b418bd9916447f80006f264e51e-10576051-images-thumbs&n=13');
+}
+.foto-5 {
+    background-image: url('https://avatars.mds.yandex.net/i?id=3421a98a4287c26ee7a4186670cdcfdf24cf7b76-9181183-images-thumbs&n=13');
+    background-position: 55% 65%;
+}
+.foto-6 {
+    background-image: url('https://avatars.mds.yandex.net/i?id=cc64f15183faa74d676ac2fb4ba8418ddecece3b-9106968-images-thumbs&n=13');
+    background-position: 35% 65%;
+}
+.foto-7 {
+    background-image: url('https://avatars.mds.yandex.net/i?id=940506cb4a784bfe143c955834324f4b16fe89f6-7016539-images-thumbs&n=13');
+    background-position: 35% 65%;
+}
+.foto-8 {
+    background-image: url('https://i.pinimg.com/236x/64/25/8d/64258d13101b08c10cd1c8586670783c.jpg');
+}
+.foto-9 {
+    background-image: url('https://avatars.mds.yandex.net/i?id=c2d4795f1536675d4c2854275df345ff97f0beab-8428027-images-thumbs&n=13');
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+span {
+    color: whitesmoke;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 17px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+}
+
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    #descricao {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .display-fotos {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        row-gap: 20px;
+        margin-top: 50px;
+        padding: 15px;
+     }   
+}

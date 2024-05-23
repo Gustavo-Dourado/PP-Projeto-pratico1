@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+/* Importação de fonte da internet */
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 1; /* Adicionada posicaço z para o card não transpassar o header quando estiver selecionado */
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    color: whitesmoke;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+    transition: .5s;
+}
+
+li:hover {
+    color: #228038;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://miro.medium.com/focal/1200/632/49/44/1*a2-VT6PuzO_wXiwR3_M1TQ.jpeg');
+    background-position:  50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    margin-top: 50px;
+}
+
+#trailer-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.content {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.description {
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+    text-align: justify;
+}
+
+.button {
+    width: 200px;
+    height: 40px;
+    background-color: #228038;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; /* Letra mais grossa */
+    border: none; /* Sem borda */
+    outline: none; /* Sem linha no button */
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: black;
+}
+
+.card-actor-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://rare-gallery.com/mocahbig/1377884-neo-the-matrix-resurrections-2021-movie-keanu-reeves.jpg');
+    background-repeat: no-repeat;
+}
+
+.banner-2 {
+    background-image: url('https://i.pinimg.com/736x/55/71/c3/5571c38dfa43b192a9c7ce5bd2276e36.jpg');
+    background-repeat: no-repeat;
+}
+
+.banner-3 {
+    background-image: url('https://www.refinery29.com/images/10817699.jpg');
+    background-repeat: no-repeat;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 5px;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+@media(max-width: 768px) {
+    .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner{
+        background-size: auto;
+    }
+
+    #trailer-container {
+        width: 100%;
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        width: 95%;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .card-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
