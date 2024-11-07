@@ -15,7 +15,7 @@ Meu primeiro projeto no curso Profissão Programador (Full-Stack)
   <img alt="projeto_Matrix" src=".github/preview-matrix.png" width="100%">
 </p>
 
-## 🚀 Tecnologias
+## 🚀 Tecnologias 
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
