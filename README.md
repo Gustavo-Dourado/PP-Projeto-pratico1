@@ -12,7 +12,7 @@ Meu primeiro projeto no curso Profissão Programador (Full-Stack)
 <br>
 
 <p align="center">
-  <img alt="projeto_DevLinks" src=".github/preview.jpg" width="100%">
+  <img alt="projeto_Matrix" src=".github/preview-matrix.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -26,6 +26,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Site que agrupa informações do filme matrix 4, através da divulgação de conteúdo para promover a compra de ingressos pelo usuário, com seções de página home, fotos, comentários e contato. 
 
-Esse foi meu primeiro projeto desenvolvido no curso full-stack *Profissão Programador*, com o professor Paulo Borges
+Esse foi meu primeiro projeto desenvolvido no curso full-stack **Profissão Programador**, com o professor Paulo Borges
 
 ---
